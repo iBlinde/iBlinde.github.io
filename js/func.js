@@ -108,6 +108,7 @@ function doUpdatePage() {
   document.getElementById("uPHr").textContent = u.toString();
   document.getElementById("mPHr").textContent = timeString();
   document.getElementById("totalCharge").textContent = total.toString();
+  document.getElementById("totalCharge-sm").textContent = total.toString();
 }
 
 function timeString() {
