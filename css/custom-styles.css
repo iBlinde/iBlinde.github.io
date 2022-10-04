@@ -1,0 +1,88 @@
+body {
+  font-family: Ubuntu;
+  background-color: #EAFFD0;
+}
+
+.navbar {
+  font-family: Montserrat;
+  background-color: #F38181;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin: 0 15px;
+}
+
+.btn:focus,
+       .btn.focus {
+           box-shadow: 0 0 0 0;
+       }
+
+.card {
+  margin: 2%;
+  border-color: #95e1d3;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+}
+
+.card-header {
+  font-weight: bold;
+  background-color: Aquamarine;
+}
+
+.card-body {
+  text-align: center;
+  font-size: 1.25rem;
+  padding: 1rem;
+}
+
+.charges {
+  margin: 0;
+  padding: 0;
+}
+
+.card p {
+  padding-top: .5rem;
+}
+
+.card-footer {
+  text-align: center;
+}
+
+
+.small-screen-h3 {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  border-top: 1px dashed blue;
+  background-color: Aquamarine;
+}
+
+.spacer {
+  margin-bottom: 6rem;
+}
+
+#small-charges {
+  font-family: Montserrat;
+  font-size: 1.2rem;
+  margin-right: 1rem;
+}
+
+#smallChgText {
+  font-family: "Dancing Script";
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 3rem;
+}
+
+
+#totalCharge, #totalCharge-sm {
+  font-family: Times, "Times New Roman";
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+
+#hrMin_txt {
+  font-variant-caps: small-caps;
+}
