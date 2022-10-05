@@ -42,9 +42,6 @@ body {
   padding: 0;
 }
 
-.card p {
-  padding-top: .5rem;
-}
 
 .card-footer {
   text-align: center;
@@ -62,6 +59,10 @@ body {
   margin-bottom: 6rem;
 }
 
+#home {
+    margin-left: 1rem;
+}
+
 #small-charges {
   font-family: Montserrat;
   font-size: 1.2rem;
@@ -73,6 +74,12 @@ body {
   font-style: italic;
   font-weight: lighter;
   font-size: 3rem;
+}
+#smallChgTextB {
+    font-family: "Dancing Script";
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 2rem;
 }
 
 
