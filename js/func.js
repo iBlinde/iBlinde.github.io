@@ -99,7 +99,7 @@ function mPHr() {
     }
 
     if (inp === 0) {
-        if (t === 60) {
+        if (t % 60 === 0) {
             alert("Hours cannot be 0 if Minutes are 00");
             return;
         }
