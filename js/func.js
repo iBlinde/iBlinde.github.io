@@ -8,6 +8,9 @@ let cMin = 5;
 let cStep = cMin;
 let cMax = 1000;
 let total = 0;
+let vat = 20;
+
+const roundAccurately = (number, decimalPlaces) => Number(Math.round(number + "e" + decimalPlaces) + "e-" + decimalPlaces);
 
 doUpdatePage();
 
@@ -219,16 +222,36 @@ function doTime(selector) {
 
 
 function doUpdatePage() {
-  t = u * 6;
-  total = (c / 10) * u;
+    t = u * 6;
+    total = (c / 10) * u;
 
-  document.getElementById("cPHr").textContent = c.toString();
-  document.getElementById("uPHr").textContent = u.toString();
+    document.getElementById("cPHr").textContent = c.toString();
+    document.getElementById("uPHr").textContent = u.toString();
     document.getElementById("mPHr").textContent = timeString(true);
     document.getElementById("mPMi").textContent = timeString(false);
-  document.getElementById("totalCharge").textContent = total.toString();
-  document.getElementById("totalCharge-sm").textContent = total.toString();
+    document.getElementById("totalCharge").textContent = formatNumber(total, 2);
+
+    let table = document.getElementById("sm-scr-vals");
+    let row = table.getElementsByTagName("tr")[1];
+    let excTTD = row.getElementsByTagName("td")[0];
+    let incTTD = row.getElementsByTagName("td")[1];
+    let valTTD = row.getElementsByTagName("td")[2];
+    let tmpT = (total / 100) * vat;
+    
+    excTTD.textContent = formatNumber(total, 2);
+    incTTD.textContent = formatNumber(total + tmpT, 2);
+    valTTD.textContent = formatNumber(tmpT, 2);
+
 }
+
+
+function formatNumber(num, decPlaces) {
+
+    let numFormat = roundAccurately(num, decPlaces);
+
+    return numFormat.toFixed(2);
+}
+
 
 function timeString(sw) {
   let h = 0;

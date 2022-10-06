@@ -3,6 +3,21 @@ body {
   background-color: #EAFFD0;
 }
 
+table {
+    padding: 2px 2px;
+    table-layout: auto;
+}
+
+thead {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+tr {
+    height: 1.1rem;
+    margin: 1px;
+}
+
 .navbar {
   font-family: Montserrat;
   background-color: #F38181;
@@ -51,12 +66,18 @@ body {
 .small-screen-h3 {
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
-  border-top: 1px dashed blue;
+  border-top: 1px dashed Aquamarine;
   background-color: Aquamarine;
 }
 
 .spacer {
   margin-bottom: 6rem;
+}
+
+.tax-foot {
+    font-family: Ubuntu;
+    font-size: 1.2rem;
+    font-variant-caps: small-caps;
 }
 
 #home {
@@ -75,6 +96,7 @@ body {
   font-weight: lighter;
   font-size: 3rem;
 }
+
 #smallChgTextB {
     font-family: "Dancing Script";
     font-style: italic;
@@ -91,5 +113,7 @@ body {
 
 
 #hrMin_txt {
+  font-size: 0.8rem;
   font-variant-caps: small-caps;
 }
+

@@ -67,7 +67,7 @@
 
     <!-- Page Content -->
 
-    <!-- total charges sgow on md screen and larger-->
+    <!-- total charges show on md screen and larger-->
     <Section id="total">
         <div class="row d-none d-md-block">
             <div class="col-md-4 col-sm-6 mx-auto">
@@ -88,7 +88,7 @@
     <!-- cards -->
     <section id="cards">
         <div class="row">
-            <div class="col-md-3 col-sm-6 col-xs-10 mx-auto">
+            <div class="col-md-4 col-sm-6 col-xs-10 mx-auto">
                 <div class="card shadow-lg">
                     <div class="card-header">
                         Charge per hour
@@ -109,7 +109,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-6 col-xs-10 mx-auto">
+            <div class="col-md-4 col-sm-6 col-xs-10 mx-auto">
                 <div class="card shadow-lg">
                     <div class="card-header">
                         Number of Units
@@ -129,7 +129,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-6 col-xs-10 mx-auto">
+            <div class="col-md-4 col-sm-6 col-xs-10 mx-auto">
                 <div class="card shadow-lg">
                     <div class="card-header">
                         Units as time
@@ -173,15 +173,28 @@
 
 
     <!--Total Charges show on sm screens and smaller-->
-    <Section id="total-sm">
-        <div class="d-block d-md-none fixed-bottom">
-            <div class="small-screen-h3 text-center">
-                <span id="small-charges">Charge:</span>
-                <span id="smallChgText">£</span>
-                <span id="totalCharge-sm">0</span>
+    <section id="total-sm">
+        <div class="d-block d-md-none fixed-bottom small-screen-h3">
+            <div class="tax-foot mx-auto">
+                <table class="table table-responsive-sm text-center" id="sm-scr-vals">
+                    <thead class="align-bottom table-secondary">
+                        <tr class="small-screen-h3">
+                            <th scope="col">excl VAT</th>
+                            <th scope="col">incl VAT</th>
+                            <th scope="col">VAT Cost</th>
+                        </tr>
+                    </thead>
+                    <tbody class="align-middle">
+                        <tr class="table-danger">
+                            <td class="excT">£343123</td>
+                            <td class="incT">£343123</td>
+                            <td class="valT">£3452.99</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
-    </Section>
+    </section>
 
 
     <script type="text/javascript" src="js/func.js"></script>
