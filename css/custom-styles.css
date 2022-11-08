@@ -18,6 +18,22 @@ tr {
     margin: 1px;
 }
 
+caption {
+    font-style: italic;
+}
+
+.alignLeft {
+    float: left;
+}
+
+.alignRight {
+    float: right;
+}
+
+.hspacer {
+    margin: 0 0.8rem;
+}
+
 .navbar {
   font-family: Montserrat;
   background-color: #F38181;
@@ -34,11 +50,36 @@ tr {
            box-shadow: 0 0 0 0;
        }
 
+.bsfoot {
+    background-color: lightgray;
+    font-size: 1rem;
+    text-align: right;
+    padding-right: 1rem;
+}
+
+
+.smDisbBodyFirstTxt {
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: left;
+    padding-left: .8rem;
+    padding-top: .8rem;
+    padding-bottom: .5rem;
+}
+
+.smDisbBodyTxt {
+    font-weight: normal;
+    font-size: 1rem;
+    text-align: left;
+    padding-left: 2rem;
+}
+
+
 .card {
-  margin: 2%;
-  border-color: #95e1d3;
-  border-top-left-radius: 14px;
-  border-top-right-radius: 14px;
+    margin: 2%;
+    border-color: #95e1d3;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
 }
 
 .card-header {
@@ -70,9 +111,31 @@ tr {
   background-color: Aquamarine;
 }
 
-.spacer {
-  margin-bottom: 6rem;
+.disburseColour {
+    background-color: mediumaquamarine;
 }
+
+.disburseFont {
+    font-style: italic;
+}
+
+.spacer {
+  margin-bottom: 8rem;
+}
+
+.disburseTable {
+    font-size: 0.8rem;
+    font-variant-caps: small-caps;
+}
+
+.smDisbCard-on {
+    background-color: lightcyan;
+}
+
+.smDisbCard-off {
+    background-color: cyan;
+}
+
 
 .tax-foot {
     font-family: Ubuntu;
@@ -82,6 +145,16 @@ tr {
 
 #home {
     margin-left: 1rem;
+}
+
+#bigStuff-subT {
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+
+#bigStuff-list {
+    font-size: 1rem;
+    font-weight: normal;
 }
 
 #small-charges {
@@ -106,9 +179,9 @@ tr {
 
 
 #totalCharge, #totalCharge-sm {
-  font-family: Times, "Times New Roman";
+  font-family: Ubuntu;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
 
@@ -117,3 +190,21 @@ tr {
   font-variant-caps: small-caps;
 }
 
+
+#disbTFoot {
+    border-top-width: thin;
+    border-top-style: double;
+}
+
+
+#chkBoxForm {
+    margin: 10px 0;
+    border-style: groove;
+    border-width: 2px;
+    border-color: red;
+    background-color: lightgoldenrodyellow;
+    font-family: Ubuntu;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    font-variant-caps: small-caps;
+}
